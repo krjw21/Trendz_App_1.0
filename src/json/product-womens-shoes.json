@@ -1,0 +1,45 @@
+[
+    {
+      "id": 1000,
+      "imageUri": "https://i.ibb.co/rQXJyHm/shoes-1.jpg",
+      "name": "Womens Shoe 1",
+      "priceOne": 120,
+      "priceTwo": "$180"
+    },
+    {
+      "id": 1001,
+      "imageUri": "https://i.ibb.co/cx8Gfn6/shoes-2.jpg",
+      "name": "Womens Shoe 2",
+      "priceOne": 100,
+      "priceTwo": null
+    },
+    {
+      "id": 1002,
+      "imageUri": "https://i.ibb.co/Ky1S7vB/shoes-3.jpg",
+      "name": "Womens Shoe 3",
+      "priceOne": 50,
+      "priceTwo": null
+    },
+    {
+      "id": 1003,
+      "imageUri": "https://i.ibb.co/Vm4JyVT/shoes-4.jpg",
+      "name": "Womens Shoe 4",
+      "priceOne": 80,
+      "priceTwo": null
+    },
+    {
+      "id": 1004,
+      "imageUri": "https://i.ibb.co/9gTpZcv/shoes-5.jpg",
+      "name": "Womens Shoe 5",
+      "priceOne": 40,
+      "priceTwo": null
+    },
+    {
+      "id": 1005,
+      "imageUri": "https://i.ibb.co/1XjztVN/shoes-6.jpg",
+      "name": "Womens Shoe 6",
+      "priceOne": 30,
+      "priceTwo": null
+    }
+]
+  

@@ -1,0 +1,31 @@
+[
+    {
+      "id": 1000,
+      "imageUri": "https://i.ibb.co/VqzGhH0/mens-bottom-1.webp",
+      "name": "Mens Bottom 1",
+      "priceOne": 120,
+      "priceTwo": "$180"
+    },
+    {
+      "id": 1001,
+      "imageUri": "https://i.ibb.co/pKsHL78/mens-bottom-2.jpg",
+      "name": "Mens Bottom 2",
+      "priceOne": 100,
+      "priceTwo": null
+    },
+    {
+      "id": 1002,
+      "imageUri": "https://i.ibb.co/K7M1n7L/mens-bottom-3.webp",
+      "name": "Mens Bottom 3",
+      "priceOne": 50,
+      "priceTwo": null
+    },
+    {
+      "id": 1003,
+      "imageUri": "https://i.ibb.co/T03vC75/mens-bottom-4.webp",
+      "name": "Mens Bottom 4",
+      "priceOne": 80,
+      "priceTwo": null
+    }
+]
+  

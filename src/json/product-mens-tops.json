@@ -1,0 +1,45 @@
+[
+    {
+      "id": 2000,
+      "imageUri": "https://i.ibb.co/0Y9mXrD/mens-top-1.webp",
+      "name": "Mens Top 1",
+      "priceOne": 120,
+      "priceTwo": "$180"
+    },
+    {
+      "id": 2001,
+      "imageUri": "https://i.ibb.co/3vcQwnC/mens-top-2.webp",
+      "name": "Mens Top 2",
+      "priceOne": 100,
+      "priceTwo": null
+    },
+    {
+      "id": 2002,
+      "imageUri": "https://i.ibb.co/HD0jrvZ/mens-top-3.webp",
+      "name": "Mens Top 3",
+      "priceOne": 50,
+      "priceTwo": null
+    },
+    {
+      "id": 2003,
+      "imageUri": "https://i.ibb.co/5LDh67L/mens-top-4.webp",
+      "name": "Mens Top 4",
+      "priceOne": 80,
+      "priceTwo": null
+    },
+    {
+      "id": 2004,
+      "imageUri": "https://i.ibb.co/t8dPchp/mens-top-5.webp",
+      "name": "Mens Top 5",
+      "priceOne": 40,
+      "priceTwo": null
+    },
+    {
+      "id": 2005,
+      "imageUri": "https://i.ibb.co/DLX3FW6/mens-top-6.webp",
+      "name": "Mens Top 6",
+      "priceOne": 30,
+      "priceTwo": null
+    }
+]
+  
