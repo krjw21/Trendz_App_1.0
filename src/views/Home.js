@@ -8,15 +8,6 @@ class Home extends Component {
     render() {
         return (
             <View>
-                <TouchableOpacity onPress={()=>this.props.navigation.navigate("Shipping")}>
-                    <Text>Shipping</Text>
-                </TouchableOpacity>
-                <TouchableOpacity onPress={()=>this.props.navigation.navigate("Login")}>
-                    <Text>Login</Text>
-                </TouchableOpacity>
-                <TouchableOpacity onPress={()=>this.props.navigation.navigate("Register")}>
-                    <Text>Register</Text>
-                </TouchableOpacity>
                 {
                     HOMECATEGORIES.map((item, index) => {
                         return (

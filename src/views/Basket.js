@@ -17,10 +17,10 @@ class Basket extends Component {
     }
 
     componentDidUpdate() {
-        if (this.state.cartItems && (this.state.cartItems.length != this.props.length)) {
+        if (this.state.cartItems && (this.state.cartItems.length != this.props.cartItems.length)) {
             this.setState({
-                cartItems: store.cartItems,
-                orderTotal: store.orderTotal
+                cartItems: this.props.cartItems,
+                orderTotal: this.props.orderTotal
             })
         }
     }
@@ -55,16 +55,18 @@ class Basket extends Component {
                             <BasketTotal label="Shipping" price="0"></BasketTotal>
                             <BasketTotal label="Your Total" price={this.state.orderTotal}></BasketTotal>
                         </View>
-                        <View style={{ paddingLeft: 10, paddingRight: 10 }}>
-                            <View style={{ backgroundColor: 'black', borderRadius: 2, flexDirection: 'row', justifyContent: 'center', alignItems: 'center', paddingTop: 10, paddingBottom: 10 }}>
-                                <View style={{ paddingLeft: 10, paddingRight: 10 }}>
-                                    <Icon name="md-cart" color='white' size={22}></Icon>
-                                </View>
-                                <View>
-                                    <Text style={{ color: 'white', fontSize: 14 }}>Place Your Order</Text>
+                        <TouchableOpacity onPress={() => this.props.navigation.navigate('Home', { screen: 'Home' })}>
+                            <View style={{ paddingLeft: 10, paddingRight: 10 }}>
+                                <View style={{ backgroundColor: 'black', borderRadius: 2, flexDirection: 'row', justifyContent: 'center', alignItems: 'center', paddingTop: 10, paddingBottom: 10 }}>
+                                    <View style={{ paddingLeft: 10, paddingRight: 10 }}>
+                                        <Icon name="md-cart" color='white' size={22}></Icon>
+                                    </View>
+                                    <View>
+                                        <Text style={{ color: 'white', fontSize: 14 }}>Place Your Order</Text>
+                                    </View>
                                 </View>
                             </View>
-                        </View>
+                        </TouchableOpacity>
                     </View>
                 </View>
             )

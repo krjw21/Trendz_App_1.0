@@ -15,8 +15,8 @@ class Login extends Component {
                 <View>
                     <ImageBackground source={{ uri: 'https://i.ibb.co/0jDQ547/category.jpg' }} style={{ width: wp('100%'), height: hp('70%') }}>
                         <View style={{flexDirection: 'row', justifyContent: 'space-between', padding: 10, marginTop: hp('50%')}}>
-                            <Button title='Register'></Button>
-                            <Button title='Login'></Button>
+                            <Button title='Register' onPress={() => this.props.navigation.navigate('Register', { screen: 'Register' })}></Button>
+                            <Button title='Login' onPress={() => this.props.navigation.navigate('Home', { screen: 'Home' })}></Button>
                         </View>
                     </ImageBackground>
                 </View>

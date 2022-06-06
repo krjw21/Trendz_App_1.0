@@ -15,7 +15,19 @@ class Category extends Component {
 
     getSubCategories = (categoryName) => {
         var subCategories = [];
-        subCategories = require(`../json/category-${categoryName.toLowerCase()}.json`);
+        if (categoryName.toLowerCase() == "accessories") {
+            subCategories = require('../json/category-accessories.json');
+        }
+        else if (categoryName.toLowerCase() == "kids") {
+            subCategories = require('../json/category-kids.json');
+        }
+        else if (categoryName.toLowerCase() == "mens") {
+            subCategories = require('../json/category-mens.json');
+        }
+        else if (categoryName.toLowerCase() == "womens") {
+            subCategories = require('../json/category-womens.json');
+        }
+        //subCategories = require(`../json/category-${categoryName.toLowerCase()}.json`);
         return subCategories;
     };
     renderSubCategories = (categoryName) => {
@@ -33,7 +45,39 @@ class Category extends Component {
 
     getProductList = (categoryName, subCategoryName) => {
         var products = [];
-        products = require(`../json/product-${categoryName.toLowerCase()}-${subCategoryName.toLowerCase()}.json`);
+        if (categoryName.toLowerCase() == "accessories") {
+            if (subCategoryName.toLowerCase() == "rings") {
+                products = require('../json/product-accessories-rings.json');
+            }
+            else if (subCategoryName.toLowerCase() == "watches") {
+                products = require('../json/product-accessories-watches.json');
+            }
+        }
+        else if (categoryName.toLowerCase() == "kids") {
+            if (subCategoryName.toLowerCase() == "bottoms") {
+                products = require('../json/product-kids-bottoms.json');
+            }
+            else if (subCategoryName.toLowerCase() == "tops") {
+                products = require('../json/product-kids-tops.json');
+            }
+        }
+        else if (categoryName.toLowerCase() == "mens") {
+            if (subCategoryName.toLowerCase() == "bottoms") {
+                products = require('../json/product-mens-bottoms.json');
+            }
+            else if (subCategoryName.toLowerCase() == "tops") {
+                products = require('../json/product-mens-tops.json');
+            }
+        }
+        else if (categoryName.toLowerCase() == "womens") {
+            if (subCategoryName.toLowerCase() == "dresses") {
+                products = require('../json/product-womens-dresses.json');
+            }
+            else if (subCategoryName.toLowerCase() == "shoes") {
+                products = require('../json/product-womens-shoes.json');
+            }
+        }
+        //products = require(`../json/product-${categoryName.toLowerCase()}-${subCategoryName.toLowerCase()}.json`);
         return products;
     };
     renderProductsList = (categoryName) => {
@@ -59,7 +103,6 @@ class Category extends Component {
         const { categoryName } = this.props.route.params;
         return (
             <View>
-                <Text>This is the category screen! {this.props.route.params.categoryName}</Text>
                 <View style={{ backgroundColor: 'grey', color: 'black', paddingTop: 10, paddingBottom: 10 }}>
                     <View style={{ flexDirection: 'row', alignItems: 'center' }}>
                         {
