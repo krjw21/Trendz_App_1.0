@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "Trendz_App_1.0",
-    "slug": "Trendz_App_1.0",
+    "slug": "trendzapp",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -23,7 +23,9 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "com.rk.trendzapp",
+      "versionCode": 1
     },
     "web": {
       "favicon": "./assets/favicon.png"
