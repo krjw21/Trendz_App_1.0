@@ -68,13 +68,17 @@ var shop = (state = initialState, action) => {
             break;
         case REMOVE_ITEM:
             return {
-                cartItems: [...state.cartItems.filter((cartItem) => {
-                    return cartItem.id != action.item.id
-                }),
+                cartItems: [
+                    ...state.cartItems.filter((cartItem) => {
+                        return cartItem.id != action.item.id
+                    }),
                 ],
-                orderTotal: state.cartItems.filter((cartItem) => {
-                    return cartItem.id != action.item.id
-                }).reduce((total, cartItem) => { return total + cartItem.priceOne + cartItem.quantity }, 0)
+                orderTotal: 
+                    state.cartItems.filter((cartItem) => {
+                        return cartItem.id != action.item.id
+                    }).reduce((total, cartItem) => {   
+                        return total + cartItem.priceOne * cartItem.quantity 
+                    }, 0)
             }
             break;
         case REMOVE_WHOLE_CART:
